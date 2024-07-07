@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Iconos: Font-Awesome -->
+    <script src="https://kit.fontawesome.com/5ddbd215bf.js" crossorigin="anonymous"></script>
+    <title>Peliculas</title>
+  </head>
+  <body>
+    <header class="header">
+      <div id="header-title">
+        <img src="../img/LOGO_WHITE_TRANSPARENTE.png" alt="" />
+        <a href="../../index.html"><h1>INESTELAR</h1></a>
+      </div>
+
+      <div class="header-info">
+        <a href="./peliculas.html"><h2>Películas</h2></a>
+        <a href="./salas.html"><h2>Salas</h2></a>
+        <a href="./boletos.html"><h2>Boletos</h2></a>
+        <a href="./asientos.html"><h2>Asientos</h2></a>
+        <a href="./sobre-nosotros.html"><h2>Equipo</h2></a>
+        <a href="./reserva.html"><h2>Reserva</h2></a>
+      </div>
+
+      <a href="https://github.com/balgxmr/university-software" id="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </header>
+
+    <main>
+      <!-- Formulario para seleccionar sucursal -->
+      <form class="container-sect movie">
+        <div class="select-container">
+          <select name="sucursal" id="sucursal" class="select-box">
+            <option value="">Selecciona una sucursal</option>
+            <option value="losandes">Los Andes Mall</option>
+            <option value="altaplaza">Altaplaza Mall</option>
+            <option value="albrook">Albrook Mall</option>
+          </select>
+          <div class="icon-container">
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+
+        <div class="select-container">
+          <select name="sucursal" id="sucursal" class="select-box">
+            <option value="">Selecciona una fecha</option>
+            <option value="losandes">6 de julio</option>
+            <option value="altaplaza">7 de julio</option>
+            <option value="albrook">8 de julio</option>
+          </select>
+          <div class="icon-container">
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+        <button type="submit">Seleccionar</button>
+      </form>
+
+      <!-- .cards.movies start -->
+      <section class="cards movies">
+        <!-- Primera Pelicula -->
+        <div class="card movie">
+          <img src="../img/godzilla-cover.jpg" />
+          <div class="card-info movie">
+            <h2>Godzilla: Los Mozillas</h2>
+            <hr />
+            <h3>Horarios</h3>
+
+            <!-- METHOD:POST? -->
+            <form action="./boletos.html">
+              <table>
+                <tr>
+                  <th>DIG SUB</th>
+                  <th>IMAX SUB</th>
+                  <th>DOB</th>
+                </tr>
+                <tr>
+                  <td>
+                    <button href="submit" name="horario" value="11:00">11:00</button>
+                  </td>
+                  <td>
+                    <button type="submit" name="horario" value="11:45">11:45</button>
+                  </td>
+                  <td>
+                    <button type="submit" name="horario" value="15:55">15:55</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="submit" name="horario" value="11:45">11:45</button>
+                  </td>
+                  <td>
+                    <button type="submit" name="horario" value="13:45">13:45</button>
+                  </td>
+                  <td>
+                    <button type="submit" name="horario" value="18:20">18:20</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+
+        <!-- Segunda Pelicula -->
+        <div class="card movie">
+          <img src="../img/godzilla-cover.jpg" />
+          <div class="card-info movie">
+            <h2>Godzilla: Los Mozillas</h2>
+            <hr />
+            <h3>Horarios</h3>
+
+            <form action="procesarHorario.jsp" method="POST">
+              <table>
+                <tr>
+                  <th>DIG SUB</th>
+                  <th>IMAX SUB</th>
+                  <th>DOB</th>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="submit" name="horario" value="11:00">11:00</button>
+                  </td>
+                  <td>
+                    <button type="submit" name="horario" value="11:45">11:45</button>
+                  </td>
+                  <td>
+                    <button type="submit" name="horario" value="15:55">15:55</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="submit" name="horario" value="11:45">11:45</button>
+                  </td>
+                  <td>
+                    <button type="submit" name="horario" value="13:45">13:45</button>
+                  </td>
+                  <td>
+                    <button type="submit" name="horario" value="18:20">18:20</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+
+        <!-- Tercera Pelicula -->
+        <div class="card movie">
+          <img src="../img/godzilla-cover.jpg" />
+          <div class="card-info movie">
+            <h2>Godzilla: Los Mozillas</h2>
+            <hr />
+            <h3>Horarios</h3>
+
+            <form action="procesarHorario.jsp" method="POST">
+              <table>
+                <tr>
+                  <th>DIG SUB</th>
+                  <th>IMAX SUB</th>
+                  <th>DOB</th>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="submit" name="horario" value="11:00">11:00</button>
+                  </td>
+                  <td>
+                    <button type="submit" name="horario" value="11:45">11:45</button>
+                  </td>
+                  <td>
+                    <button type="submit" name="horario" value="15:55">15:55</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="submit" name="horario" value="11:45">11:45</button>
+                  </td>
+                  <td>
+                    <button type="submit" name="horario" value="13:45">13:45</button>
+                  </td>
+                  <td>
+                    <button type="submit" name="horario" value="18:20">18:20</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- .cards.movies end -->
+    </main>
+
+    <footer id="footer">
+      <section id="footer-links">
+        <a href="../../index.html">
+          <div class="footer-link-box">
+            <i class="fa-solid fa-house"></i>
+            <h3>HOME</h3>
+          </div>
+        </a>
+
+        <a href="./sobre-nosotros.html">
+          <div class="footer-link-box">
+            <i class="fa-solid fa-user"></i>
+            <h3>SOBRE NOSOTROS</h3>
+          </div>
+        </a>
+
+        <a href="./admin-login.html">
+          <div class="footer-link-box">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <h3>CERRAR SESIÓN</h3>
+          </div>
+        </a>
+      </section>
+
+      <h5><b>CINESTELAR.</b> Todos los derechos reservados 2024.</h5>
+    </footer>
+  </body>
+</html>
